@@ -1,11 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --color-body-primary: #E5E5E5;
+  --color-card-primary: #000;
+  --color-card-secondary: rgba(0, 0, 0, 0.5);
+  --color-card-background: #fff;
+  --color-buttons-primary: rgba(75, 207, 160, 1);
+  --color--error: #E43F3F;
+  --color-buttons-secondary: #fff;
+  --color-popup-primary: #fff;
+  --border-buttons-default: 16px;
+  --text-small: 14px;
+  --text-middle: 30px;
+  --text-large: 40px;
+  --default-weight: 400;
+  --regular-weight: 500;
+  --default-radius: 16px;
+}
+@media only screen and (min-width: 1280px) {
+  :root {
+    --color-body-primary: #E5E5E5;
+    --color-card-primary: #000;
+    --color-card-secondary: rgba(0, 0, 0, 0.5);
+    --color-card-background: #fff;
+    --color-buttons-primary: rgba(75, 207, 160, 1);
+    --color--error: #E43F3F;
+    --color-buttons-secondary: #fff;
+    --color-popup-primary: #fff;
+    --border-buttons-default: 16px;
+    --text-small: 16px;
+    --text-middle: 40px;
+    --text-large: 60px;
+    --default-weight: 400;
+    --regular-weight: 500;
+    --default-radius: 24px;
+  }
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--color-body-primary);
 }
+
+* {
+  box-sizing: border-box;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
